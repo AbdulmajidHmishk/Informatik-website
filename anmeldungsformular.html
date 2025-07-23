@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section id="anmeldung">
+
+        <h2>Anmeldungsformular</h2>
+        <form action="/submit" method="post">
+
+            <label for="vorname">vorname</label> <br>
+            <input type="text" name="vorname" id="vorname" placeholder="type your name"> <br><br>
+
+            <label for="nachname">nachname</label> <br>
+            <input type="text" name="nachname" id="nachname" placeholder="type your family name"><br><br>
+
+            <label for="fach">Fachrichtung:</label><br>
+            <select id="fach" name="fach">
+                <option value="">Select eine Fachrichtung</option>
+                <option value="Systemadministration">Systemadministration</option>
+                <option value="Networking">Networking</option>
+                <option value="Dancing">Dancing</option>
+            </select><br><br>
+
+            <p>Hobbys</p>
+            <input type="checkbox" id="schlafen" name="hobbys" value="schlafen">
+            <label for="schlafen">Schlafen</label><br>
+
+            <input type="checkbox" id="essen" name="hobbys" value="essen">
+            <label for="essen">Essen</label><br><br>
+
+            <p>Bevorzugter Unterrichtszeiten für den Unterricht:</p>
+            <input type="radio" id="vormittag" name="zeit" value="vormittag">
+            <label for="vormittag">Vormittag</label><br>
+
+            <input type="radio" id="nachmittag" name="zeit" value="nachmittag">
+            <label for="nachmittag">Nachmittag</label><br><br>
+            <label for="password">Enter yourr password schnell</label><br>
+            <input type="password" name="password" id="password" placeholder="type your password"> <br><br>
+
+
+
+            <label for="nachricht">Nachricht:</label><br>
+            <textarea id="nachricht" name="nachricht" rows="5" cols="30" placeholder=" type your Message here i will see it in two years"></textarea><br><br>
+
+            <button type="submit">Absenden</button>
+
+        </form>
+
+    </section> 
+</body>
+</html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="de">
 
 <head>
+    <link rel="stylesheet" href="Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
@@ -10,26 +10,22 @@
 
 <body>
     <header>
-        <h1>Faculty of Informatics Engineering - Aleppo University</h1>
-        <p>Willkommen in Syrien</p>
+        <div class="ticker-wrapper1">
+            <div class="ticker">
+                <p>Faculty of Informatics Engineering - Syrien</p>
+            </div>
+        </div>
         <figure style="text-align: center;">
-            <img src="1.jpg" alt="Faculty" border="4"><br>
-            <figcaption>
-                <h3>Willkommen in der Universität von Majid Hmishk</h3>
-            </figcaption>
+            <img src="2.jpg" alt="Faculty" border="4" width="750"><br>
         </figure>
     </header>
-
     <nav>
-
         <ul>
             <li><a href="#about-us">Über uns </a></li>
             <li><a href="#team">majid's Team </a></li>
-            <li><a href="#anmeldung">Zur Anmeldung </a></li>
+            <li id="zurAnmeldung" ><a href="anmeldungsformular.html " target="_self">Zur AnmeldungsSeite </a></li>
         </ul>
-
     </nav>
-
     <section id="about-us">
         <h2>Über die Akademie</h2>
         <p>
@@ -37,10 +33,6 @@
             <br> du kannst hier anmelden <br>
             der Chef ist <strong>Majid Hmishk</strong>. <br>
             du kannst bei ihm anmelden, er ist sehr nett.
-
-
-
-
         </p>
     </section>
     <section id="team">
@@ -56,61 +48,13 @@
             </li>
         </ul>
     </section>
-
-    <p style="text-align: center;"> <b> Sei höflich , Sei nett </b> </p>
-<section id="anmeldung">
-
-        <h2>Anmeldungsformular</h2>
-        <form action="/submit" method="post">
-
-            <label for="vorname">vorname</label> <br>
-            <input type="text" name="vorname" id="vorname" placeholder="type your name"> <br><br>
-
-            <label for="nachname">nachname</label> <br>
-            <input type="text" name="nachname" id="nachname" placeholder="type your family name"><br><br>
-
-            <label for="fach">Fachrichtung:</label><br>
-            <select id="fach" name="fach">
-                <option value="">Select eine Fachrichtung</option>
-                <option value="Systemadministration">Systemadministration</option>
-                <option value="Networking">Networking</option>
-                <option value="Dancing">Dancing</option>
-            </select><br><br>
-
-            <p>Hobbys</p>
-            <input type="checkbox" id="schlafen" name="hobbys" value="schlafen">
-            <label for="schlafen">Schlafen</label><br>
-
-            <input type="checkbox" id="essen" name="hobbys" value="essen">
-            <label for="essen">Essen</label><br><br>
-
-            <p>Bevorzugter Unterrichtszeiten für den Unterricht:</p>
-            <input type="radio" id="vormittag" name="zeit" value="vormittag">
-            <label for="vormittag">Vormittag</label><br>
-
-            <input type="radio" id="nachmittag" name="zeit" value="nachmittag">
-            <label for="nachmittag">Nachmittag</label><br><br>
-            <label for="password">Enter yourr password schnell</label><br>
-            <input type="password" name="password" id="password" placeholder="type your password"> <br><br>
-
-
-
-            <label for="nachricht">Nachricht:</label><br>
-            <textarea id="nachricht" name="nachricht" rows="5" cols="30" placeholder=" type your Message here i will see it in two years"></textarea><br><br>
-
-            <button type="submit">Absenden</button>
-
-        </form>
-
-    </section>
     <footer>
-
-        <p style="text-align: center; font-size:larger; color: red;"> Majid's Akademie</p>
+        <div class="ticker-wrapper2">
+            <div class="ticker">
+                <p>Sei höflich , Sei nett </p>
+            </div>
+        </div>
     </footer>
 </body>
-
-<figure style="text-align: center;">
-    <img src="2.jpg" alt="Faculty" border="4">
-</figure>
 
 </html>
